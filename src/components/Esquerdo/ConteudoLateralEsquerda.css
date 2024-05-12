@@ -20,7 +20,7 @@
     margin-top: 70px;
 }
 
-ul > li{
+.conteudoLateralEsquerda ul > li{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -34,7 +34,7 @@ ul > li{
     cursor: pointer;
 }
 
-li:hover{
+.conteudoLateralEsquerda ul li:hover{
     background-color: rgb(29, 29, 29);
 }
 
@@ -42,12 +42,12 @@ li:hover{
     transform: rotate(60deg);
 }
 
-li:hover > :first-child{
+.conteudoLateralEsquerda ul li:hover > :first-child{
     transform: scale(1.1);
     transition: 0.3s;
 }
 
-li:hover > .rotate-icon{
+.conteudoLateralEsquerda ul li:hover > .rotate-icon{
     transform: scale(1.1) rotate(60deg);
     transition: 0.3s;
 }

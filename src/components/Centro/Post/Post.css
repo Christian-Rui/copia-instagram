@@ -61,7 +61,8 @@
 .card {   
     width: 53%;
     margin-left: 20px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: ;
 }
 
 h3 {
