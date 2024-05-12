@@ -14,7 +14,6 @@ export default function Feed(){
                 nome='BearlyKKK'
                 imgSrc={post1}
                 body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc." />
-
         </div>
     )
 }

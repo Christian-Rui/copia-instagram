@@ -54,9 +54,10 @@ li:hover > .rotate-icon{
 
 
 .conteudoLateralEsquerda > img{
-    width: 40%;
+    width: 102.5px;
     margin-bottom: 30px;
     margin-top: 40px;
     margin-left: 25px;
+    cursor: pointer;
 }
 

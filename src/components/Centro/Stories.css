@@ -13,7 +13,7 @@
 }
 
 .profile-image {
-    padding: 3px;
+    padding: 2px;
     background: linear-gradient(#b62dc8, #ffba27 60%);
 }
 
@@ -26,6 +26,7 @@
 .userName {
     font-size: 12px;
     font-weight: 300;
+    margin-top: 4px;
 }
 
 .Story img {

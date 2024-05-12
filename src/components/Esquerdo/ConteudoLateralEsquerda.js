@@ -52,7 +52,7 @@ export default function ConteudoLateralEsquerda() {
 
                 
 
-                <Menu nome="Notifications" classe="text-menu" icone={<GoHeart style={{
+                <Menu nome="Notificações" classe="text-menu" icone={<GoHeart style={{
                     fontSize: tamanhoIcon,
                     color: corIcon,
                 }} />} />

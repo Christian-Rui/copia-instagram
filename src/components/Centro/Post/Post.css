@@ -4,18 +4,25 @@
 
 .card-header {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     gap: 10px;
     padding-bottom: 10px;
 }
 
-.card-header > img {
+.card-header >:first-child{
+    padding: 2px;
+    background: linear-gradient(#b62dc8, #ffba27 60%);
+}
+
+.card-header div img, .card-header >:first-child{
     border-radius: 50%;
     width: 40px;
     height: 40px;
+}
+
+.card-header div img{
+    background: #000;
+    box-sizing: border-box;
     padding: 2px;
-    background: linear-gradient(#b62dc8, #ffba27 60%);
 }
 
 .body-img {
@@ -40,3 +47,32 @@
     width: 53%;
     margin-left: 20px;
 }
+
+h3 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: gray;
+}
+
+.icon.animate, .expanded {
+    animation: pulse 0.3s ease-in-out;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+  
+  
+  
