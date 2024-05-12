@@ -1,22 +1,35 @@
 .Stories {
     display: flex;
     flex-direction: row;
-    margin-bottom: 50px;
+    margin-block: 20px 25px;
 }
 
 .Story {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 60px;
+    align-items: center; 
+    margin: 10px; 
+    cursor: pointer;  
+}
+
+.profile-image {
+    padding: 3px;
+    background: linear-gradient(#b62dc8, #ffba27 60%);
+}
+
+.Story img, .profile-image {
+    border-radius: 50%;
     height: 60px;
-    margin: 10px;   
+    width: 60px;    
+}
+
+.userName {
+    font-size: 12px;
+    font-weight: 300;
 }
 
 .Story img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    padding: 3px;
-    background: linear-gradient(#b62dc8, #ffba27 60%);
+    background: #000;
+    box-sizing: border-box;
+    padding: 2px;
 }

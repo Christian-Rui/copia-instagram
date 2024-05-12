@@ -16,17 +16,27 @@
     height: 40px;
     padding: 2px;
     background: linear-gradient(#b62dc8, #ffba27 60%);
-    margin-left: 55px;
 }
 
 .body-img {
-    width: 80%;
-    height: 80vh;
-    margin: 0 auto;
+    border-radius: 5px;
+    min-height: 550px;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(128, 128, 128, 0.3);
 }
 
-.card-body{
+.body-img img {
+    width: 100%;
+}
+
+.card-body {
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+.card {   
+    width: 53%;
+    margin-left: 20px;
 }

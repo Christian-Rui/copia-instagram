@@ -1,35 +1,62 @@
 .conteudoLateralEsquerda{
-    line-height: 70px;
-    padding: 2%;
+    line-height: 50px;
     position: fixed;
+    background-color: black;
+    border-right: .1px solid rgba(128, 128, 128, 0.3);
 }
 
 .conteudoLateralEsquerda ul{
     list-style-type: none;
     display: flex;
     flex-direction: column;
+    gap: 7px;
 }
 
 .conteudoLateralEsquerda ul :first-child{
-    font-weight: 800;
+    font-weight: 700;
 }
 
+.conteudoLateralEsquerda ul li:last-child{
+    margin-top: 70px;
+}
 
-ul li{
+ul > li{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 15px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
+    color: white;
+    padding-left: 10px;
+    margin-inline: 15px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-.conteudoLateralEsquerda img{
-    width: 50%;
-    margin-bottom: 20px;
+li:hover{
+    background-color: rgb(29, 29, 29);
 }
 
-.conteudoLateralEsquerda .Profile{
-    margin-top: auto;
-  }
+.rotate-icon{
+    transform: rotate(60deg);
+}
+
+li:hover > :first-child{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+li:hover > .rotate-icon{
+    transform: scale(1.1) rotate(60deg);
+    transition: 0.3s;
+}
+
+
+.conteudoLateralEsquerda > img{
+    width: 40%;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-left: 25px;
+}
 
