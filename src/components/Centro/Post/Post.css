@@ -4,6 +4,7 @@
 
 .card-header {
     display: flex;
+    align-items: center;
     gap: 10px;
     padding-bottom: 10px;
 }
@@ -27,7 +28,7 @@
 
 .body-img {
     border-radius: 5px;
-    min-height: 550px;
+    min-height: 560px;
     background-color:black;
     display: flex;
     align-items: center;
@@ -41,16 +42,32 @@
 .card-body {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-body >:not(:first-child){
+    width: 98%;
+}
+
+.card-body p:not(.publicar){
+    font-weight: 300;
+    font-size: 14px;
+    overflow-wrap: break-word;  /* Quebra a linha se a palavra for muito longa */
+    word-wrap: break-word;      /* Quebra a linha se a palavra for muito longa */
+    word-break: break-all; 
 }
 
 .card {   
     width: 53%;
     margin-left: 20px;
+    margin-bottom: 50px;
 }
 
 h3 {
     font-size: 14px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .icon {
@@ -74,5 +91,58 @@ h3 {
     }
 }
   
-  
+.icons-post {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-block: 10px;
+}
+
+.save{
+    margin-left: auto;
+}
+
+.input-comentario {
+    background-color: black;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    color: white;
+    resize: none;
+}
+
+p span {
+    font-weight: 600;
+}
+
+.publicar{
+    font-weight: 800;
+    font-size: 16px;
+    cursor: pointer;
+    color: rgb(0, 140, 255);
+    
+}
+
+.publicar:hover{
+    color: rgb(203, 217, 248);
+}
+
+.area-comentario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px;
+}
+
+.emoji{
+    cursor: pointer;
+    color: rgb(163, 163, 163);
+    
+}
+
+.emoji:hover{
+    color: gray;
+}
   

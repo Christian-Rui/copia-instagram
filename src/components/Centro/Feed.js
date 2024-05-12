@@ -11,9 +11,9 @@ export default function Feed(){
         <div className='Feed'>
             <Post
                 perfil={perfil1}
-                nome='BearlyKKK'
+                nome='bearlyKKK'
                 imgSrc={post1}
-                body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc." />
+                body="Só passendo com os melhores nesse dia 🐻" />
         </div>
     )
 }

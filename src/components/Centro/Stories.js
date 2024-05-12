@@ -36,23 +36,23 @@ var listaUsuario = [
     //     url: 'https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/4a/aa/d4/4aaad43e-7835-d5d1-2640-1aaba9b1af2f/0.jpg/800x800cc.jpg'
     // }
     {
-        nome: 'Ruirui',
+        nome: 'ruirui',
         url: perfil1
     },
     {
-        nome: 'BearlyKKK',
+        nome: 'bearlyKKK',
         url: perfil2
     }, 
     {
-        nome: 'CatJun',
+        nome: 'catJun',
         url: perfil3
     }, 
     {
-        nome: 'Gret_flor',
+        nome: 'gret_flor',
         url: perfil4
     }, 
     {
-        nome: 'Dudu_auau',
+        nome: 'dudu_auau',
         url: perfil5
     }, 
     {
@@ -60,7 +60,7 @@ var listaUsuario = [
         url: perfil6
     }, 
     {
-        nome: 'Rogerio',
+        nome: 'rogerio',
         url: perfil7
     },  
 
