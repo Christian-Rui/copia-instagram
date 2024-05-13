@@ -36,12 +36,12 @@ var listaUsuario = [
     //     url: 'https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/4a/aa/d4/4aaad43e-7835-d5d1-2640-1aaba9b1af2f/0.jpg/800x800cc.jpg'
     // }
     {
-        nome: 'ruirui',
-        url: perfil1
+        nome: 'bearlyKKK',
+        url: perfil2      
     },
     {
-        nome: 'bearlyKKK',
-        url: perfil2
+        nome: 'ruirui',
+        url: perfil1
     }, 
     {
         nome: 'catJun',

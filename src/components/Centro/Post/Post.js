@@ -4,6 +4,7 @@ import { useState } from 'react';
 import React, { useEffect, useRef } from 'react';
 import Picker from 'emoji-picker-react';
 
+import { BsThreeDots } from "react-icons/bs";
 import { FaRegHeart, FaSlidersH } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { TbMessageCircle } from "react-icons/tb";
@@ -29,7 +30,7 @@ export default function Post(props) {
         setPostarComentario([...postarComentario, comentario]);
         setComentario('');
         SetEmojiPicker(false);
-      };
+    };
 
     const handleIconClick = () => {
         setLikes(!likes);
@@ -47,12 +48,12 @@ export default function Post(props) {
                 theme='dark'
                 emojiStyle='native'
                 searchDisabled='true'
-                previewConfig={{showPreview: false}}
+                previewConfig={{ showPreview: false }}
                 suggestedEmojisMode='recent'
                 allowExpandReactions={false}
                 height={300} width={300}
 
-                style={{position:'absolute', marginBottom: '330px', marginLeft: '440px'}}
+                style={{ position: 'absolute', marginBottom: '330px', marginLeft: '440px' }}
             />
         );
     }
@@ -74,20 +75,23 @@ export default function Post(props) {
         textareaRef.current.style.height = `${textareaRef.current.scrollHeight}px`;
     }, [comentario]);
 
-    
-
     return (
         <div className="card post">
             <div className="card-header">
                 <div>
-                    <img src={props.perfil}></img>
+                    <img className={props.fundoColorido === true ? "fundoColorido" : ''} src={props.perfil}></img>
                 </div>
                 <h3>{props.nome}</h3>
+                <BsThreeDots className='icon' style={{
+                    marginLeft: 'auto',
+                    color: 'white',
+                    fontSize: '20px'
+                }}></BsThreeDots>
             </div>
             <div className="card-body">
                 <div className='body-img'>
                     <img src={props.imgSrc} />
-                    
+
                 </div>
                 <div className='icons-post'>
                     {likes ?
@@ -117,31 +121,37 @@ export default function Post(props) {
                 </div>
                 <p><span>{5 + (!likes ? 1 : 0)} curtidas</span></p>
                 <p><span>{props.nome}</span> {props.body}</p>
+
+                {props.comentarios ? props.comentarios.map((elemento, index) => (
+                    <p key={index}><span>{elemento[0]}</span> {elemento[1]}</p>
+                )) : null}
+
                 {postarComentario.map((comentario, index) => (
-                    <p key={index}><span>{props.nome}</span> {comentario}</p>
+                    <p key={index}><span>{props.logado}</span> {comentario}</p>
                 ))}
-                
+
                 <div className='area-comentario'>
-                
                     <textarea ref={textareaRef} className='input-comentario'
                         type="text"
                         value={comentario}
                         onChange={handleInputChange}
-                        onKeyDown={(event) => {if(event.key === 'Enter' && !event.shiftKey){
-                            event.preventDefault();
-                            adicionarComentario();
-                        }}}
+                        onKeyDown={(event) => {
+                            if (event.key === 'Enter' && !event.shiftKey) {
+                                event.preventDefault();
+                                adicionarComentario();
+                            }
+                        }}
                         placeholder='Adicione um comentário...' style={{
-                            width: '100%', 
-                            fontSize: '16px', 
+                            width: '100%',
+                            fontSize: '16px',
                             fontWeight: 300,
                             maxHeight: '100px'
                         }}></textarea>
-                    {comentario && <p className='publicar' onClick={adicionarComentario} style={{fontSize: '16px', fontWeight: 600}}>Publicar</p>}
+                    {comentario && <p className='publicar' onClick={adicionarComentario} style={{ fontSize: '16px', fontWeight: 600 }}>Publicar</p>}
                     {emojiPicker}
-                    <GoSmiley onClick={triggerPicker} className='emoji' style={{fontSize: '18px'}}></GoSmiley>   
-                </div>           
-            </div>         
+                    <GoSmiley onClick={triggerPicker} className='emoji' style={{ fontSize: '18px' }}></GoSmiley>
+                </div>
+            </div>
         </div>
     );
 }
