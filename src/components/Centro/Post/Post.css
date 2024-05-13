@@ -2,6 +2,11 @@
     width: 500px;
 }
 
+.card {   
+    width: 53%;
+    margin-left: 20px;
+}
+
 .card-header {
     display: flex;
     align-items: center;
@@ -27,6 +32,26 @@
     padding: 2px;
 }
 
+h3 {
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: gray;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .body-img {
     border-radius: 5px;
     height: 560px;
@@ -44,12 +69,6 @@
     object-fit: contain;
 }
 
-.card-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .card-body >:not(:first-child){
     width: 98%;
 }
@@ -63,38 +82,6 @@
     line-height: 25px;
 }
 
-.card {   
-    width: 53%;
-    margin-left: 20px;
-}
-
-h3 {
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.icon {
-    cursor: pointer;
-}
-
-.icon:hover {
-    color: gray;
-}
-
-.icon.animate, .expanded {
-    animation: pulse 0.3s ease-in-out;
-}
-
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.2);
-    }
-}
-  
 .icons-post {
     width: 100%;
     display: flex;
@@ -104,8 +91,27 @@ h3 {
     margin-block: 10px;
 }
 
+.icon.animate, .expanded {
+    animation: pulse 0.3s ease-in-out;
+}
+
 .save{
     margin-left: auto;
+}
+
+p span {
+    font-weight: 600;
+}
+
+.area-comentario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px;
+    margin-top: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
 }
 
 .input-comentario {
@@ -115,10 +121,6 @@ h3 {
     outline: 0;
     color: white;
     resize: none;
-}
-
-p span {
-    font-weight: 600;
 }
 
 .publicar{
@@ -133,17 +135,6 @@ p span {
     color: rgb(203, 217, 248);
 }
 
-.area-comentario {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 13px;
-    margin-top: 5px;
-    padding-bottom: 10px;
-    margin-bottom: 25px;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.3);
-}
-
 .emoji{
     cursor: pointer;
     color: rgb(163, 163, 163);
@@ -153,4 +144,12 @@ p span {
 .emoji:hover{
     color: gray;
 }
-  
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}

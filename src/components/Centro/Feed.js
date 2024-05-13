@@ -53,18 +53,6 @@ export default function Feed(){
                 comentarios={objeto.comentarios}
                  />
             ))}
-            {/* <Post
-                perfil={perfil1}
-                nome='bearlyKKK'
-                imgSrc={post1}
-                body="Só passendo com os melhores nesse dia 🐻"
-                 />
-            <Post
-                perfil={perfil1}
-                nome='bearlyKKK'
-                imgSrc={post1}
-                body="Só passendo com os melhores nesse dia 🐻"
-                 /> */}
         </div>
     )
 }
