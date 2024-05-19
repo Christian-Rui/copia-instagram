@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+![Print de tela inteira da copia do instagram]
+(./readme-content/print.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Copia do Instagram - Beartagram
 
-## Available Scripts
+Tentativa de reproduzir a pagina principal do Instagram para Desktop em React
 
-In the project directory, you can run:
+## 🔨 Funcionalidades do projeto
 
-### `npm start`
+Apenas possui 3 posts básicos de conteúdo. 
+Tem algumas animações simples no menu lateral direita. Uma animação do coração de like. Algumas alterações de cores de botões dos posts e do menu lateral esquerda,  usando hover .
+Possibilidade de fazer comentarios nas fotos (sem limite estabelecido). E por fim possíbilidade de usar emojis nos comentarios.
+Contador de likes funcional.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✔️ Técnicas e tecnologias utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+As técnicas e tecnologias utilizadas pra isso são:
 
-### `npm test`
+- `React/Node.js`: plataforma feita utilizando React/Node.js
+- `CSS`: Todas as animações foram feitas utilizando CSS
+- `:hover( )`: Pseudo-classe usada na maioria das animações para verificar se o mouse estava em cima do elemento
+- `transform: scale( )`: Função do CSS utilizada para fazer animação de icones se expandindo.
+- `animation: pulse`: Função utilizada para fazer animação de pulso do icone do like. 
+- `react-icons `: Biblioteca utilizada para obter e usar os icones no sites
+- `emoji-picker-react`: Pacote utilizado para usar icones na plataforma
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🎯 Videos
+Menu lateral esquerda com animações simples de expandir icones
 
-### `npm run build`
+![orgs-desafio-detalhes](./readme-content/HeaderVideo.mp4)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Menu lateral direita utilizando a pseudo-classe :hover( )
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![orgs-desafio-detalhes](./readme-content/FooterVideo.mp4)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Conteudo principal, com animação de pulso do botão de like. Com comentarios e emojis funcionais
 
-### `npm run eject`
+![orgs-desafio-detalhes](./readme-content/MainVideo.mp4)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📁 Acesso ao projeto
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Você pode [baixá-lo]().
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🛠️ Abrir e rodar o projeto
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Após baixar o projeto, bocê pode descompacta-lo, e usar ele no Visual Code (ou alguma opção similar) seguindo esses passos:
 
-## Learn More
+- **Open folder**
+- Procure o local onde o projeto está e o selecione (Caso o projeto seja baixado via zip, é necessário extraí-lo antes de procurá-lo)
+- Clique em OK
+- Abra o terminal
+- Digite "npm i" para instalar os pacotes necessários e clique em Enter
+- Após completar a instalação, você pode testar digitando no terminal "npm start" e por fim clicando Enter
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Time
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/113655013?v=4" width=115><br><sub>Christian Rui</sub>](https://github.com/Christian-Rui)
+| :---: |
