@@ -1,5 +1,4 @@
-![Print de tela inteira da copia do instagram]
-(./readme-content/print.png)
+![Print de tela inteira da copia do instagram](./readme-content/print.png)
 
 # Copia do Instagram - Beartagram
 
@@ -27,19 +26,19 @@ As técnicas e tecnologias utilizadas pra isso são:
 ## 🎯 Videos
 Menu lateral esquerda com animações simples de expandir icones
 
-![orgs-desafio-detalhes](./readme-content/HeaderVideo.mp4)
+https://github.com/Christian-Rui/copia-instagram/assets/113655013/c800f516-7e71-49b9-aa25-39afee434be0
 
 Menu lateral direita utilizando a pseudo-classe :hover( )
 
-![orgs-desafio-detalhes](./readme-content/FooterVideo.mp4)
+https://github.com/Christian-Rui/copia-instagram/assets/113655013/e7af074a-ea7f-45fe-b4ac-cfdb09bbe6cc
 
 Conteudo principal, com animação de pulso do botão de like. Com comentarios e emojis funcionais
 
-![orgs-desafio-detalhes](./readme-content/MainVideo.mp4)
+https://github.com/Christian-Rui/copia-instagram/assets/113655013/5574bc84-f690-4e2a-a167-afef086b8b85
 
 ## 📁 Acesso ao projeto
 
-Você pode [baixá-lo]().
+Você pode [baixá-lo](https://github.com/Christian-Rui/copia-instagram/archive/refs/heads/main.zip).
 
 ## 🛠️ Abrir e rodar o projeto
 
