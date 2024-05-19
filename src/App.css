@@ -25,13 +25,13 @@ body {
 }
 
 .conteudoLateralDireita {
-  background: blue;
-  width:28vw;
+  background: black;
+  width:30vw;
   right: 0;
 }
 
 .conteudoCentral {
-  width:58vw;
+  width:56vw;
   background-color: black;
 }
 

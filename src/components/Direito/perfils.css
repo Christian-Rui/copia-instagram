@@ -1,0 +1,48 @@
+.perfils {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    margin-right: 33%;
+    margin-left: 3%;
+    padding-bottom: 4%;
+}
+
+.perfils img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.perfils .nome{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.perfils .subDescricao{
+    font-weight: 200;
+}
+
+.perfils .btn {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(0, 140, 255);
+    margin-left: auto;
+}
+
+.perfils .textos {
+    line-height: 16px;
+}
+
+.perfils .btn, .perfils img, .perfils .nome{
+    cursor: pointer;
+}
+
+.perfils .btn:hover{
+    color: rgb(203, 217, 248);
+}
+
+.sugestoesDescri{
+    font-size: 13px;
+    color: rgb(160, 160, 160);
+}

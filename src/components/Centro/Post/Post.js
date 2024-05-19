@@ -12,14 +12,21 @@ import { HiOutlinePaperAirplane } from "react-icons/hi";
 import { BiBookmark } from "react-icons/bi";
 import { GoSmiley } from "react-icons/go";
 
-
-
 export default function Post(props) {
-    const [likes, setLikes] = useState(FaSlidersH);
+    const [likes, setLikes] = useState(true);
     const [animate, setAnimate] = useState(false);
     const [comentario, setComentario] = useState('');
     const [postarComentario, setPostarComentario] = useState([]);
     const [emojiPickerState, SetEmojiPicker] = useState(false);
+
+    const handleIconClick = () => {
+        setLikes(!likes);
+    };
+
+    const handleMouseLeave = () => {
+        setAnimate(true);
+        setTimeout(() => setAnimate(false), 300); // Reset after animation duration
+    };
 
 
     const handleInputChange = (event) => {
@@ -32,9 +39,12 @@ export default function Post(props) {
         SetEmojiPicker(false);
     };
 
-    const handleIconClick = () => {
-        setLikes(!likes);
-    };
+    const textareaRef = useRef(null);
+
+    useEffect(() => {
+        textareaRef.current.style.height = '20px';
+        textareaRef.current.style.height = `${textareaRef.current.scrollHeight}px`;
+    }, [comentario]);
 
     const onEmojiClick = (emojiObject) => {
         setComentario(comentario + ' ' + emojiObject.emoji);
@@ -59,22 +69,13 @@ export default function Post(props) {
     }
 
     const triggerPicker = (event) => {
-        event.preventDefault();
+        // event.preventDefault();
         SetEmojiPicker(!emojiPickerState);
     };
 
-    const handleMouseLeave = () => {
-        setAnimate(true);
-        setTimeout(() => setAnimate(false), 300); // Reset after animation duration
-    };
+    
 
-    const textareaRef = useRef(null);
-
-    useEffect(() => {
-        textareaRef.current.style.height = '20px';
-        textareaRef.current.style.height = `${textareaRef.current.scrollHeight}px`;
-    }, [comentario]);
-
+    
     return (
         <div className="card post">
             <div className="card-header">
@@ -85,7 +86,8 @@ export default function Post(props) {
                 <BsThreeDots className='icon' style={{
                     marginLeft: 'auto',
                     color: 'white',
-                    fontSize: '20px'
+                    fontSize: '18px',
+                    marginBlock: 'auto'
                 }}></BsThreeDots>
             </div>
             <div className="card-body">
@@ -131,7 +133,10 @@ export default function Post(props) {
                 ))}
 
                 <div className='area-comentario'>
-                    <textarea ref={textareaRef} className='input-comentario'
+
+                    <textarea
+                        ref={textareaRef}
+                        className='input-comentario'
                         type="text"
                         value={comentario}
                         onChange={handleInputChange}
@@ -141,12 +146,14 @@ export default function Post(props) {
                                 adicionarComentario();
                             }
                         }}
-                        placeholder='Adicione um comentário...' style={{
+                        placeholder='Adicione um comentário...'
+                        style={{
                             width: '100%',
                             fontSize: '16px',
                             fontWeight: 300,
                             maxHeight: '100px'
-                        }}></textarea>
+                        }}/>
+
                     {comentario && <p className='publicar' onClick={adicionarComentario} style={{ fontSize: '16px', fontWeight: 600 }}>Publicar</p>}
                     {emojiPicker}
                     <GoSmiley onClick={triggerPicker} className='emoji' style={{ fontSize: '18px' }}></GoSmiley>
