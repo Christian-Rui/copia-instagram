@@ -48,7 +48,7 @@
     margin-top: 2vh;
 }
 
-.footer a:hover {
+.footer a span:hover {
     text-decoration-line: underline;
     cursor: pointer;
-} 
+}

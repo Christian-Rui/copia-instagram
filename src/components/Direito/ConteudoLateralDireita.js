@@ -1,7 +1,6 @@
 import './conteudoLateralDireita.css';
 
 import Perfils from './Perfils.js';
-import Suggestions from './SugestoesPerfil';
 
 import perfil from '../../img/Perfil2.png';
 import sugestao1 from '../../img/Capipurple.png';
@@ -56,16 +55,16 @@ export default function ConteudoLateralDireita() {
             )}
             <footer className='footer'> 
             
-                <a>Sobre <span>.</span></a>
-                 <a>Ajuda <span>.</span></a>
-                 <a>Imprensa <span>.</span></a>
-                 <a>API <span>.</span></a>
-                 <a>Carreiras <span>.</span></a>
-                 <a>Privacidade <span>.</span></a>
-                 <a>Termos <span>.</span></a>
-                 <a>Localizações <span>.</span></a>
-                 <a>Idioma <span>.</span></a>
-                 <a>Bearly Verified</a>
+                <a><span>Sobre</span> .</a>
+                 <a><span>Ajuda</span> .</a>
+                 <a><span>Imprensa</span> .</a>
+                 <a><span>API</span> .</a>
+                 <a><span>Carreiras</span> .</a>
+                 <a><span>Privacidade</span> .</a>
+                 <a><span>Termos</span> .</a>
+                 <a><span>Localizações</span> .</a>
+                 <a><span>Idioma</span> .</a>
+                 <a><span>Bearly Verified</span></a>
                  <div>© 2024 BEARTAGRAM FROM BEARLY</div>
             </footer>
         </div>
