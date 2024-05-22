@@ -6,9 +6,9 @@ Tentativa de reproduzir a pagina principal do Instagram para Desktop em React
 
 ## 🔨 Funcionalidades do projeto
 
-Apenas possui 3 posts básicos de conteúdo. 
-Tem algumas animações simples no menu lateral direita. Uma animação do coração de like. Algumas alterações de cores de botões dos posts e do menu lateral esquerda,  usando hover .
-Possibilidade de fazer comentarios nas fotos (sem limite estabelecido). E por fim possíbilidade de usar emojis nos comentarios.
+Possui apenas 3 posts básicos de conteúdo.
+Tem algumas animações simples no menu lateral direito. Uma animação do coração de like. Algumas alterações de cores de botões dos posts e do menu lateral esquerdo, usando hover.
+Possibilidade de fazer comentários nas fotos (sem limite estabelecido). E, por fim, possibilidade de usar emojis nos comentários. 
 Contador de likes funcional.
 
 ## ✔️ Técnicas e tecnologias utilizadas
@@ -18,10 +18,10 @@ As técnicas e tecnologias utilizadas pra isso são:
 - `React/Node.js`: plataforma feita utilizando React/Node.js
 - `CSS`: Todas as animações foram feitas utilizando CSS
 - `:hover( )`: Pseudo-classe usada na maioria das animações para verificar se o mouse estava em cima do elemento
-- `transform: scale( )`: Função do CSS utilizada para fazer animação de icones se expandindo.
-- `animation: pulse`: Função utilizada para fazer animação de pulso do icone do like. 
-- `react-icons `: Biblioteca utilizada para obter e usar os icones no sites
-- `emoji-picker-react`: Pacote utilizado para usar icones na plataforma
+- `transform: scale( )`: Função do CSS utilizada para fazer animação de ícones se expandindo.
+- `animation: pulse`: Função utilizada para fazer animação de pulso do ícone do like. 
+- `react-icons `: Biblioteca utilizada para obter e usar os ícones no site
+- `emoji-picker-react`: Pacote utilizado para usar ícones na plataforma
 
 ## 🎯 Videos
 Menu lateral esquerda com animações simples de expandir icones
